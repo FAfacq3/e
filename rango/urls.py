@@ -1,8 +1,6 @@
 from django.urls import path
-from rango import views
-
-app_name = 'rango'
+from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('my-data-page/', views.my_view, name='my_data_page'),
 ]
